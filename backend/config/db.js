@@ -29,7 +29,7 @@ dotenv.config();
 const connectDB = async () => {
   try {
     if (!process.env.MONGO_URI2) {
-      throw new Error("MONGO_URI is not defined in environment variables");
+      throw new Error("MONGO_URI2 is not defined in environment variables");
     }
 
     const connect = await mongoose.connect(process.env.MONGO_URI2, {
